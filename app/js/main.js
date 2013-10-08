@@ -26,7 +26,7 @@ require.config({
         backbone: {
             deps: ['jquery', 'underscore', 'json2'],
             exports: 'Backbone'
-        }
+        },
 
         picky: ['backbone'],
 
@@ -35,17 +35,17 @@ require.config({
         marionette: {
             deps: ['backbone'],
             exports: 'Marionette'
-        }
+        },
 
         jqueryui: ['jquery'],
 
-        localstorage: ['backbone']
+        localstorage: ['backbone'],
 
         spinjquery: ['spin', 'jquery']
 
     }
 });
 
-require([],function (){
-    
+require(['app', 'modules/header/headerModule'], function(LibraryManager){
+  LibraryManager.start();
 });

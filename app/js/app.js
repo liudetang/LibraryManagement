@@ -45,7 +45,11 @@ define([
     };
 
     LibraryManager.on('initialize:after', function() {
-        if(Backbone.history){
+
+        //Temporary Code
+        Backbone.history.start();
+
+        /*if(Backbone.history){
             require([], function (){
                 Backbone.history.start();
 
@@ -53,7 +57,7 @@ define([
                     LibraryManager.trigger("books:list");
                 }
             });
-        }
+        }*/
     });
 
 });
