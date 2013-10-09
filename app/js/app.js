@@ -45,19 +45,16 @@ define([
     };
 
     LibraryManager.on('initialize:after', function() {
-
-        //Temporary Code
-        Backbone.history.start();
-
-        /*if(Backbone.history){
-            require([], function (){
+        if(Backbone.history){
+            require(['modules/books/booksModule', 'modules/about/aboutModule'], function (){
                 Backbone.history.start();
 
                 if(LibraryManager.getCurrentRoute() === ''){
                     LibraryManager.trigger("books:list");
                 }
+                
             });
-        }*/
+        }
     });
 
 });
