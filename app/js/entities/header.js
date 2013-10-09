@@ -22,7 +22,7 @@ define(['app','picky'], function (LibraryManager){
 
         var initializeHeaders = function(){
             Entities.headers = new Entities.HeaderCollection([
-                {name: 'Books', url: 'books', navigationTrigger: 'contacts:list'},
+                {name: 'Books', url: 'books', navigationTrigger: 'books:list'},
                 {name: 'About', url: 'about', navigationTrigger: 'about:show'}
             ]);
         };

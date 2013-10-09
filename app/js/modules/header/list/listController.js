@@ -12,7 +12,7 @@ define(['app', 'modules/header/list/listView'], function(LibraryManager, View) {
                     var headers = new View.Headers({collection:Links});
 
                     headers.on('brand:clicked', function() {
-                        LibraryManager.trigger('contacts:list');
+                        LibraryManager.trigger('books:list');
                     });
 
                     headers.on('itemView:navigate', function (childView, model) {

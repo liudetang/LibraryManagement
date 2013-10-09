@@ -47,5 +47,5 @@ require.config({
 });
 
 require(['app', 'modules/header/headerModule'], function(LibraryManager){
-  LibraryManager.start();
+    LibraryManager.start();
 });

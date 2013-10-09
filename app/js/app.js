@@ -1,6 +1,6 @@
 define([
     'marionette',
-    'modules/config/marionette/regions/dialog'], function (Marionette){
+    'modules/config/marionette/regions/dialog'], function (Marionette) {
 
     var LibraryManager = new Marionette.Application();
 
