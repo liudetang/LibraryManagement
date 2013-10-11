@@ -18,7 +18,6 @@ define(['app', 'modules/books/list/listView'], function (LibraryManager, View) {
                     require(['entities/common'], function (FilteredCollection) {
                         
                         $.when(fetchingBooks).done(function (books) {
-                            console.log(books);
                             var filteredBooks = LibraryManager.Entities.FilteredCollection({
                                 collection: books,
                                 filterFunction: function (filterCriterion) {
@@ -85,7 +84,7 @@ define(['app', 'modules/books/list/listView'], function (LibraryManager, View) {
                                 });
                             });
 
-                            booksListView.on('itemview:book:show', function () {
+                            booksListView.on('itemview:book:show', function (childView, model) {
                                 LibraryManager.trigger("book:show", model.get('id'));
                             });
 
@@ -110,7 +109,7 @@ define(['app', 'modules/books/list/listView'], function (LibraryManager, View) {
                                 });
                             });
 
-                            booksListView.on("itemview:book:delete", function(childView, model){
+                            booksListView.on("itemview:book:delete", function (childView, model) {
                                 model.destroy();
                             });
 

@@ -66,7 +66,7 @@ define(['app'], function (LibraryManager) {
             }
         });
 
-        LibraryManager.on('books:show', function (id) {
+        LibraryManager.on('book:show', function (id) {
             LibraryManager.navigate('books/' + id);
             API.showBook(id);
         });
