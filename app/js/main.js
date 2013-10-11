@@ -4,15 +4,15 @@ require.config({
     
     paths: {
         backbone: 'lib/backbone',
-        picky: 'lib/backbone.picky',
-        syphon: 'lin/backbone.syphon',
+        "backbone.picky": 'lib/backbone.picky',
+        "backbone.syphon": 'lib/backbone.syphon',
         jquery: 'lib/jquery',
-        jqueryui: 'lib/jquery-ui',
+        "jquery-ui": 'lib/jquery-ui',
         json2: 'lib/json2',
         localstorage: 'lib/backbone.localstorage',
         marionette: 'lib/backbone.marionette',
         spin: 'lib/spin',
-        spinjquery: 'lib/spin.jquery',
+        "spin.jquery": 'lib/spin.jquery',
         tpl: 'lib/tpl',
         underscore: 'lib/underscore'
     },
@@ -28,20 +28,20 @@ require.config({
             exports: 'Backbone'
         },
 
-        picky: ['backbone'],
+        "backbone.picky": ['backbone'],
 
-        syphon: ['backbone'],
+        "backbone.syphon": ['backbone'],
 
         marionette: {
             deps: ['backbone'],
             exports: 'Marionette'
         },
 
-        jqueryui: ['jquery'],
+        "jquery-ui": ['jquery'],
 
         localstorage: ['backbone'],
 
-        spinjquery: ['spin', 'jquery']
+        "spin.jquery": ['spin', 'jquery']
 
     }
 });

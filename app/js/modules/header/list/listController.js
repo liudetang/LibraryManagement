@@ -9,7 +9,7 @@ define(['app', 'modules/header/list/listView'], function(LibraryManager, View) {
                 require(['entities/header'], function() {
                     
                     var links = LibraryManager.request('header:entities');
-                    var headers = new View.Headers({collection:Links});
+                    var headers = new View.Headers({collection:links});
 
                     headers.on('brand:clicked', function() {
                         LibraryManager.trigger('books:list');
@@ -24,7 +24,7 @@ define(['app', 'modules/header/list/listView'], function(LibraryManager, View) {
                 });
             },
 
-            setActiveHeader: function(){
+            setActiveHeader: function(headerUrl){
                 
                 var links = LibraryManager.request('header:entities');
                 var headerToSelect = links.find( function (header){ 

@@ -1,4 +1,4 @@
-define(['app','picky'], function (LibraryManager){
+define(['app','backbone.picky'], function (LibraryManager){
     LibraryManager.module('Entities', function(Entities, LibraryManager, Backbone, Marionette, $, _) {
         
         Entities.Header = Backbone.Model.extend({

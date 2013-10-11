@@ -57,4 +57,5 @@ define([
         }
     });
 
+    return LibraryManager;
 });
