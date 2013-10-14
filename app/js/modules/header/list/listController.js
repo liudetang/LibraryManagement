@@ -15,7 +15,7 @@ define(['app', 'modules/header/list/listView'], function(LibraryManager, View) {
                         LibraryManager.trigger('books:list');
                     });
 
-                    headers.on('itemView:navigate', function (childView, model) {
+                    headers.on('itemview:navigate', function (childView, model) {
                         var trigger = model.get('navigationTrigger');
                         LibraryManager.trigger(trigger);
                     });
