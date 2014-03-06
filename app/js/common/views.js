@@ -1,4 +1,4 @@
-define(["app", "tpl!common/templates/loading.tpl", "spin.jquery"], function (LibraryManager, loadingTpl) {
+define(["app", "tpl!common/templates/loading.html", "spin.jquery"], function (LibraryManager, loadingTpl) {
   
     LibraryManager.module('Common.Views', function(Views, LibraryManager, Backbone, Marionette, $, _) {
 

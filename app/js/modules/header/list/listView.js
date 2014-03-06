@@ -1,6 +1,6 @@
 define(['app',
-        'tpl!modules/header/list/templates/list.tpl',
-        'tpl!modules/header/list/templates/listItem.tpl'], 
+        'tpl!modules/header/list/templates/list.html',
+        'tpl!modules/header/list/templates/listItem.html'], 
         function (LibraryManager, listTemplate, listItemTemplate) {
             LibraryManager.module('HeaderModule.List.View', function (View, LibraryManager, Backbone, Marionette, $, _) {
                 View.Header = Marionette.ItemView.extend({

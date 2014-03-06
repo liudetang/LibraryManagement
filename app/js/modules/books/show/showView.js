@@ -1,6 +1,6 @@
 define(['app',
-        'tpl!modules/books/show/templates/missing.tpl',
-        'tpl!modules/books/show/templates/view.tpl'], 
+        'tpl!modules/books/show/templates/missing.html',
+        'tpl!modules/books/show/templates/view.html'], 
     function (LibraryManager, missingTemplate, viewTemplate) {
 
         LibraryManager.module('BooksModule.Show.View', function (View, LibraryManager, Backbone, Marionette, $, _) {

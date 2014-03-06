@@ -1,9 +1,9 @@
 define(['app',
-        'tpl!modules/books/list/templates/layout.tpl',
-        'tpl!modules/books/list/templates/panel.tpl',
-        'tpl!modules/books/list/templates/none.tpl',
-        'tpl!modules/books/list/templates/list.tpl',
-        'tpl!modules/books/list/templates/listItem.tpl'], 
+        'tpl!modules/books/list/templates/layout.html',
+        'tpl!modules/books/list/templates/panel.html',
+        'tpl!modules/books/list/templates/none.html',
+        'tpl!modules/books/list/templates/list.html',
+        'tpl!modules/books/list/templates/listItem.html'], 
     function (LibraryManager, layoutTemplate, panelTemplate, noneTemplate, listTemplate, listItemTemplate) {
 
         LibraryManager.module('BooksModule.List.View', function(View, LibraryManager, Backbone, Marionette, $, _) {

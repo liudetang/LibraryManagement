@@ -1,4 +1,4 @@
-define(['app', 'tpl!modules/books/common/templates/form.tpl', 'backbone.syphon'], 
+define(['app', 'tpl!modules/books/common/templates/form.html', 'backbone.syphon'], 
     function (LibraryManager, formTemplate) {
 
         LibraryManager.module('BooksModule.Common.Views', function (Views, LibraryManager, Backbone, Marionette, $, _) {
